@@ -1,0 +1,56 @@
+{
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_num_buckets": 32,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float32",
+  "transformers_version": "4.30.0",
+  "use_cache": true,
+  "vocab_size": 35000,
+  "task_specific_params": {
+    "legal_narrative": {
+      "early_stopping": true,
+      "length_penalty": 1.0,
+      "max_length": 512,
+      "min_length": 50,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "legal_narrative: "
+    },
+    "case_summary": {
+      "early_stopping": true,
+      "length_penalty": 1.2,
+      "max_length": 256,
+      "min_length": 100,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "case_summary: "
+    },
+    "legal_brief": {
+      "early_stopping": true,
+      "length_penalty": 1.1,
+      "max_length": 1024,
+      "min_length": 200,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "legal_brief: "
+    }
+  }
+}
