@@ -9,8 +9,8 @@ The large model files are hosted on HuggingFace Hub for better performance and r
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 # Automatically downloads and caches the model
-tokenizer = T5Tokenizer.from_pretrained("lemkin-ai/t5-legal-narrative")
-model = T5ForConditionalGeneration.from_pretrained("lemkin-ai/t5-legal-narrative", from_tf=True)
+tokenizer = T5Tokenizer.from_pretrained("LemkinAI/t5-legal-narrative")
+model = T5ForConditionalGeneration.from_pretrained("LemkinAI/t5-legal-narrative", from_tf=True)
 ```
 
 ### Option 2: Manual Download via CLI
@@ -19,13 +19,13 @@ model = T5ForConditionalGeneration.from_pretrained("lemkin-ai/t5-legal-narrative
 pip install huggingface_hub
 
 # Download all model files
-huggingface-cli download lemkin-ai/t5-legal-narrative --local-dir ./models/t5-legal-narrative/
+huggingface-cli download LemkinAI/t5-legal-narrative --local-dir ./models/t5-legal-narrative/
 ```
 
 ### Option 3: Git Clone from HuggingFace
 ```bash
 # Clone the model repository
-git clone https://huggingface.co/lemkin-ai/t5-legal-narrative
+git clone https://huggingface.co/LemkinAI/t5-legal-narrative
 ```
 
 ## 📊 Model Files Available on HuggingFace Hub
@@ -40,15 +40,15 @@ git clone https://huggingface.co/lemkin-ai/t5-legal-narrative
 | `special_tokens_map.json` | 1KB | Special tokens mapping |
 
 ## 🌐 Model Hub URL
-**https://huggingface.co/lemkin-ai/t5-legal-narrative**
+**https://huggingface.co/LemkinAI/t5-legal-narrative**
 
 ## ⚡ Quick Start
 ```python
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
 # Load model
-tokenizer = T5Tokenizer.from_pretrained("lemkin-ai/t5-legal-narrative")
-model = T5ForConditionalGeneration.from_pretrained("lemkin-ai/t5-legal-narrative", from_tf=True)
+tokenizer = T5Tokenizer.from_pretrained("LemkinAI/t5-legal-narrative")
+model = T5ForConditionalGeneration.from_pretrained("LemkinAI/t5-legal-narrative", from_tf=True)
 
 # Example usage - Legal narrative generation
 prompt = "Summarize the following legal evidence: The defendant was found at the scene with the murder weapon."

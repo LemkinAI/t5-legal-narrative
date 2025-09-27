@@ -11,7 +11,7 @@
 
 ### Model Sources
 - **Repository:** https://github.com/LemkinAI/t5-legal-narrative
-- **Hugging Face Hub:** https://huggingface.co/lemkin-ai/t5-legal-narrative
+- **Hugging Face Hub:** https://huggingface.co/LemkinAI/t5-legal-narrative
 - **Paper:** [Coming Soon]
 
 ## Uses
